@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Information</title>
+  <style>
+    /* Glassmorphism effect */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Gradient background */
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+      font-family: 'Montserrat', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Form styles */
+    .form-container {
+      max-width: 400px;
+      width: 100%;
+      padding: 40px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 16px;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    .form-group textarea {
+      width: 100%;
+      height: 100px;
+      resize: none;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 16px;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    /* Button styles */
+    .btn-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="form-container glass-card">
+    <h2>Steam Games Recommendation</h2>
+    <form>
+      <div class="form-group">
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" name="genre" placeholder="Enter the genre" required>
+      </div>
+      <div class="form-group">
+        <label for="pricing">Pricing</label>
+        <input type="text" id="pricing" name="pricing" placeholder="Enter the pricing" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder="Enter the description" rows="3" required style="resize: none; height: 100px;"></textarea>
+      </div>
+      <div class="btn-container">
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
