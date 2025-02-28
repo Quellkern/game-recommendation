@@ -44,7 +44,7 @@ game-recommendation/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Meykaye/game-recommendation.git
+   git clone https://github.com/Quellkern/game-recommendation.git
    cd game-recommendation
    ```
 
